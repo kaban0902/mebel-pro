@@ -9,19 +9,33 @@
   .menu-toggle { width: 44px; height: 44px; }
   .mobile-menu { max-height: calc(100dvh - 72px); }
 
-  .hero { gap: 18px; padding-top: 84px; }
+  .hero { gap: 30px; padding-top: 84px; }
   .hero-copy { max-width: 100%; padding: 8px 0 0; }
-  .hero-copy h1 { font-size: clamp(38px, 10.8vw, 54px); line-height: 1.04; }
-  .hero-description { margin-top: 16px; font-size: 16px; line-height: 1.5; }
-  .hero-offer { margin-top: 12px; font-size: 17px; line-height: 1.4; }
-  .hero-actions { align-items: stretch; flex-direction: column; gap: 6px; margin-top: 22px; }
+  .hero-copy h1 { font-size: clamp(39px, 10.2vw, 52px); line-height: 1.035; }
+  .hero-description { margin-top: 22px; font-size: 16px; line-height: 1.5; }
+  .hero-offer { margin-top: 24px; font-size: 17px; line-height: 1.4; }
+  .hero-actions { align-items: stretch; flex-direction: column; gap: 14px; margin-top: 22px; }
   .hero-actions .button { width: 100%; }
-  .hero-actions .button-secondary { min-height: 44px; align-self: flex-start; padding-block: 9px; }
-  .hero-gift-banner { width: 100%; max-width: 560px; margin-top: 20px; }
-  .hero-gift-banner img { width: 100%; height: auto; object-fit: contain; }
-  .hero-media { min-height: 0; aspect-ratio: 4 / 3; }
-  .hero-media figcaption { right: 10px; bottom: 10px; left: 10px; padding: 8px 10px; font-size: 14px; text-align: center; }
-  .hero-benefits { grid-template-columns: 1fr; padding-block: 10px; }
+  .hero-actions .button-secondary { min-height: 44px; align-self: flex-start; padding-block: 8px; font-size: 15px; }
+  .hero-actions .button-secondary .icon { width: 18px; height: 18px; }
+  .hero-gift-banner, .hero-media { display: none; }
+  .hero-mobile-promo {
+    display: block;
+    width: 100%;
+    margin-top: 26px;
+    padding: 18px 20px 16px;
+    border: 1px solid #cdbba8;
+    border-radius: 16px;
+    background: #f3eee6;
+  }
+  .hero-mobile-promo-label { display: flex; align-items: center; gap: 8px; color: var(--wood-dark); font-size: 12px; font-weight: 700; letter-spacing: .045em; line-height: 1.3; }
+  .hero-mobile-promo-label .icon { width: 19px; height: 19px; }
+  .hero-mobile-promo-title { margin-top: 12px; color: var(--ink); font-size: clamp(19px, 5.1vw, 22px); font-weight: 700; letter-spacing: -.025em; line-height: 1.25; }
+  .hero-mobile-promo-copy { margin-top: 6px; color: var(--muted); font-size: 15px; line-height: 1.45; }
+  .hero-mobile-promo a { display: inline-flex; min-height: 44px; align-items: center; gap: 8px; margin-top: 10px; border-bottom: 1px solid var(--wood-dark); color: var(--wood-dark); font-size: 15px; font-weight: 700; line-height: 1.25; }
+  .hero-mobile-promo a .icon { width: 17px; height: 17px; }
+  .hero-mobile-promo a:hover { border-color: var(--ink); color: var(--ink); }
+  .hero-benefits { grid-template-columns: 1fr; padding-block: 6px; }
   .hero-benefits > div { min-height: 0; gap: 12px; padding: 11px 0; border-right: 0; border-bottom: 1px solid var(--line); font-size: 15px; line-height: 1.35; }
   .hero-benefits > div:last-child { border-bottom: 0; }
   .hero-benefits .feature-icon { width: 28px; height: 28px; }
@@ -131,7 +145,6 @@
 }
 
 @media (min-width: 600px) and (max-width: 768px) {
-  .hero-media { aspect-ratio: 16 / 10; }
   .catalog-card > img, .project-card > img { aspect-ratio: 16 / 9; }
 }
 
@@ -139,6 +152,7 @@
   .container { width: min(calc(100% - 28px), var(--container)); }
   .brand-name { width: 132px; }
   .hero-copy h1 { font-size: 38px; }
+  .hero-mobile-promo { padding-inline: 16px; }
   .catalog-content { padding-inline: 16px; }
   .advantages-list { grid-template-columns: 1fr; }
   .advantages-list article, .advantages-list article:nth-child(odd) { display: flex; gap: 12px; padding-block: 14px; }
