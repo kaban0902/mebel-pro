@@ -27,4 +27,4 @@
 .desktop-nav a:hover,.site-footer nav a:hover,.header-phone:hover,.footer-phone:hover,.project-link:hover{color:var(--wood-text)}
 @media(max-width:1180px){.project-link,.site-footer nav a,.footer-phone,.footer-bottom a,.contact-address a,.contact-phone,.site-footer .brand,.site-header .brand{min-height:44px;display:inline-flex;align-items:center}}
 
-.carousel-hint,.mobile-sticky-cta,.hero-mobile-promo{display:none}
+.carousel-hint,.mobile-sticky-cta{display:none}
