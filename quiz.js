@@ -68,7 +68,7 @@
       "Подскажите, пожалуйста, предварительную стоимость."
     ].join("\n");
 
-    whatsappLink.href = "https://wa.me/77086738821?text=" + encodeURIComponent(message);
+    whatsappLink.href = "https://wa.me/77774122475?text=" + encodeURIComponent(message);
     steps.forEach((item) => { item.hidden = true; });
     controls.hidden = true;
     result.hidden = false;
