@@ -29,8 +29,7 @@
 
 .carousel-hint,.mobile-sticky-cta{display:none}
 
-.hero-description{display:grid;gap:12px}
-.hero-description p{font:inherit}
-.hero-description .hero-installment{max-width:none;margin:0;color:#b63830;font-size:inherit;font-weight:inherit;line-height:inherit}
+.hero-description .hero-installment{color:#b63830}
 .hero-gift-banner{max-width:none}
+@media(min-width:1024px){.hero-copy{align-self:stretch;justify-content:flex-start;padding-bottom:0}.hero-copy .hero-gift-banner{margin-top:auto;padding-top:24px;flex-shrink:0}}
 @media (min-width:1024px) and (max-width:1180px){.hero-actions{gap:14px}.hero-actions .button{padding-inline:16px;white-space:nowrap}.hero-actions .button-secondary{gap:8px;font-size:15px;white-space:nowrap}}
